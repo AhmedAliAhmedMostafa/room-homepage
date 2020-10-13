@@ -1,0 +1,50 @@
+.slider-photo{
+  position: relative;
+}
+.slider-photo__source{
+  width: 100%;
+}
+.slider-buttons{
+  
+  position: absolute;
+  bottom: 4px;
+  right: 0px;
+  background-color: $secondary-color;
+} 
+.slider-buttons__left,.slider-buttons__right{
+  display: inline-block;
+  padding: 1rem;
+  cursor: pointer;
+}
+.slider-buttons__left:hover,.slider-buttons__right:hover{
+  background: $accent-color;
+}
+.description{
+  padding: 3rem 1rem;
+  font-family: 'Spartan', sans-serif;
+  line-height: 1.5;
+}
+.description__heading{
+  font-weight: 700;
+  color: $secondary-color;
+}
+.description__body{
+  font-weight: 500;
+  font-size: 12px;
+  color: $body-color;
+  margin-bottom: 3rem;
+}
+.shop-button{
+  text-decoration: none;
+  font-weight: 600;
+  color: $accent-color;
+  text-transform: uppercase;
+  word-spacing: 1rem;
+  letter-spacing: 0.67rem;
+}
+.shop-button:hover{
+  color: $body-color;
+}
+.shop-button > img{
+  margin-left: 1rem;
+}

@@ -1,0 +1,24 @@
+.about{
+  width: 100%;
+}
+.about img{
+  width: 100%;
+}
+.about__content{
+  padding: 3rem 1rem;
+  font-family: 'Spartan', sans-serif;
+  line-height: 1.5;
+  font-size: 12px;
+}
+.about__heading{
+  font-weight: 700;
+  color: $secondary-color;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+.about__body{
+  font-weight: 500;
+  
+  color: $body-color;
+  line-height: 1.5;
+}

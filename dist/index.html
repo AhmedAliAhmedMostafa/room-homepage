@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <title>Frontend Mentor | Room homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+
+  <header class="header">
+    <section class="logo-container">
+      <div class="menu-button">
+        <img src="./images/icon-hamburger.svg" alt="button">
+      </div>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./images/logo.svg" alt="brand-logo">
+        </a>
+      </div>
+    </section>
+    <nav class="top-nav hide">
+      <span class="top-nav__close_button">
+        <img src="./images/icon-close.svg" alt="">
+      </span>
+      <ul class="menu">
+        <li>
+          <a href="" class="menu__item">Home</a>
+        </li>
+        <li>
+          <a href="" class="menu__item">Shop</a>
+        </li>
+        <li>
+          <a href="" class="menu__item">About</a>
+        </li>
+        <li>
+          <a href="" class="menu__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="slider">
+      <article class="slider-photo">
+        <img class="slider-photo__source" src="./images/mobile-image-hero-1.jpg" alt="">
+        <div class="slider-buttons">
+          <span class="slider-buttons__left" onclick="nextSlide('left')">
+            <img src="./images/icon-angle-left.svg" alt="">
+          </span>
+          <span class="slider-buttons__right" onclick="nextSlide('right')">
+            <img src="./images/icon-angle-right.svg" alt="">
+          </span>
+        </div>
+      </article>
+      <article class="description">
+        <h1 class="description__heading">
+          Discover innovative ways to decorate
+        </h1>
+        <p class="description__body">
+          We provide unmatched quality, comfort, and style for property owners across the country. 
+          Our experts combine form andnfunction in bringing your vision to life. Create a room in your 
+          own style with our collection and make your property a reflection of you and what you love.
+        </p>
+        <a href="#" class="shop-button">
+          Shop now 
+          <img src="./images/icon-arrow.svg" alt="right-arrow">
+        </a>
+      </article>
+    </section>
+    <section class="about">
+      <article class="about__cover"><img src="./images/image-about-dark.jpg" alt=""></article>
+      <article class="about__content">
+        <h1 class="about__heading"> 
+           About our furniture
+        </h1>
+        <p class="about__body">  
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </article>
+      <article class="about__cover"><img src="./images/image-about-light.jpg" alt=""></article>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><br>
+    Coded by <a href="#">Ahmed Ali</a>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
