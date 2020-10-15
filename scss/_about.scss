@@ -22,3 +22,19 @@
   color: $body-color;
   line-height: 1.5;
 }
+// 
+@media only screen and (min-width:700px){
+.about{
+  display: flex;
+
+}
+.about__content{
+  flex:4;
+}
+.about__cover{
+  flex: 3;
+}
+.about img {
+
+}
+}

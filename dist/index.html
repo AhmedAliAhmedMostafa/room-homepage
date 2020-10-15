@@ -48,8 +48,9 @@
   </header>
   <main>
     <section class="slider">
+      
       <article class="slider-photo">
-        <img class="slider-photo__source" src="./images/mobile-image-hero-1.jpg" alt="">
+        <img class="slider-photo__source" src="" alt="">
         <div class="slider-buttons">
           <span class="slider-buttons__left" onclick="nextSlide('left')">
             <img src="./images/icon-angle-left.svg" alt="">
@@ -75,7 +76,9 @@
       </article>
     </section>
     <section class="about">
-      <article class="about__cover"><img src="./images/image-about-dark.jpg" alt=""></article>
+      <article class="about__cover">
+        <img src="./images/image-about-dark.jpg" alt="">
+      </article>
       <article class="about__content">
         <h1 class="about__heading"> 
            About our furniture
@@ -94,6 +97,12 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><br>
     Coded by <a href="#">Ahmed Ali</a>
   </div>
+  <script>
+    if(window.matchMedia('(min-width:700px)').matches)
+      document.querySelector('.slider-photo__source').setAttribute('src','./images/desktop-image-hero-1.jpg')
+    else
+    document.querySelector('.slider-photo__source').setAttribute('src','./images/mobile-image-hero-1.jpg')
+ </script>
   <script src="./js/main.js"></script>
 </body>
 </html>

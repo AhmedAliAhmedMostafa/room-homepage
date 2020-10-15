@@ -48,3 +48,20 @@
 .shop-button > img{
   margin-left: 1rem;
 }
+// 
+@media only screen and (min-width:700px){
+  .slider{
+    display: flex;
+  }
+  .slider-photo{
+    flex: 6;
+  }
+  .description{
+    padding: 5rem 5rem ;
+    flex: 3;
+  }
+  .slider-buttons{
+    bottom: 4px;
+    right: -97px;
+  }
+}

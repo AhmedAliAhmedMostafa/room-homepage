@@ -9,9 +9,13 @@ function toggleMenu(){
   menu.classList.toggle('hide');
 }
 // slider
-const img = ['./images/mobile-image-hero-1.jpg',
+var desktop = window.matchMedia('(min-width:700px)');
+const imgMobile = ['./images/mobile-image-hero-1.jpg',
 './images/mobile-image-hero-2.jpg',
 './images/mobile-image-hero-3.jpg'];
+const imgDesktop = ['./images/desktop-image-hero-1.jpg',
+'./images/desktop-image-hero-2.jpg',
+'./images/desktop-image-hero-3.jpg'];
 
 const heading = ['Discover innovative ways to decorate' ,'We are available all across the globe' ,'Manufactured with the best materials'];
 
@@ -36,7 +40,11 @@ function nextSlide(direction){
     else
       sliderPointer = 2;
   }
-  imgElement.setAttribute('src',img[sliderPointer]);
+  if(desktop.matches)
+    imgElement.setAttribute('src',imgDesktop[sliderPointer]);
+  else
+    imgElement.setAttribute('src',imgMobile[sliderPointer]);
+
   headingElement.innerHTML = heading[sliderPointer];
   bodyElement.innerHTML = body [sliderPointer];
 }
